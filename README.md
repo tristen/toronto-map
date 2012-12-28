@@ -2,5 +2,5 @@ A simple map of Toronto using data provided by [toronto.ca/open](http://toronto.
 
 ### Installation
 
-    $ cd ~/Documents/Mapbox/projects
+    $ cd ~/Documents/MapBox/project/
     $ git clone git@github.com:tristen/toronto-map.git
