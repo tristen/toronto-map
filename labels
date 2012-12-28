@@ -1,0 +1,81 @@
+/*-----------------------------------
+  Font Vars
+------------------------------------- */
+@sans: "Museo Sans 500", Helvetica, Arial, sans-serif;
+@sans_bold: "Museo Sans 900", Helvetica, Arial, sans-serif;
+@sign: "BigNoodleTitling Regular", "Arial Narrow";
+
+/*-----------------------------------
+  Labels
+------------------------------------- */
+#ontario-lake[Name2='Great Lakes'] {
+  text-name: "'Lake Ontario'";
+  text-face-name: @sans;
+  text-fill: #fff;
+  text-size: 14;
+  text-placement: interior;
+  }
+
+#surrounding {
+  text-name: "[NAME]";
+  text-face-name: @sign;
+  text-fill: #ddecf0;
+  text-size: 24;
+  text-placement: interior;
+  text-transform: uppercase;
+  }
+
+#parks[zoom>12]{
+  text-name:"[NAME]";
+  text-opacity: .90;
+  text-placement: interior;
+  text-transform: uppercase;
+  text-face-name: @sans_bold;
+  text-wrap-width: 30;
+  text-fill: @darkgrey;
+  text-size: 8;
+  text-halo-radius: 1.6;
+  text-halo-fill: #fff;
+  text-character-spacing: 1;
+  text-wrap-width: 25;
+  text-line-spacing: 2;
+  text-min-distance: 40;
+  [zoom>14]{text-min-distance: 10;}
+  }
+#line-labels[FCODE_DESC='Major Arterial'][zoom > 12] {
+  text-name: "[LF_NAME]";
+  text-placement: line;
+  text-face-name: @sans_bold;
+  text-fill: @darkgrey;
+  text-size: 9;
+  text-dy: 5;
+  text-min-distance: 150;
+  }
+
+#line-labels[FCODE_DESC='Expressway'][zoom > 11] {
+  shield-file: url(./textures/shield-small.png);
+  shield-name: "[LF_NAME]";
+  shield-face-name: @sign;
+  shield-fill: #fff;
+  shield-min-distance: 100;
+  shield-size: 10;
+  [zoom > 13] {
+    shield-size: 16;
+    shield-file: url(./textures/shield.png);
+    }
+  }
+
+#underlay-lines[FCODE_DESC='Major Arterial'][zoom >= 11]
+#line-labels[FCODE_DESC='Minor Arterial'],
+#line-labels[FCODE_DESC='Laneway'],
+#line-labels[FCODE_DESC='Local'] {
+  text-name: "[LF_NAME] + ' ' + [ADDRESS_L]";
+  text-placement: line;
+  text-face-name: @sans;
+  text-transform: lowercase;
+  text-fill: @darkgrey;
+  text-opacity: .75;
+  text-size: 9;
+  text-dy: 8;
+  text-min-distance: 150;
+  }

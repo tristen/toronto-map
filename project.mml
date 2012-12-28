@@ -1,0 +1,183 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    -79.30618822574334,
+    43.66036649454348,
+    13
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "labels"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -79.77470862538834,
+        43.19013092655374,
+        -75.7702530589788,
+        44.504523016399496
+      ],
+      "id": "ontario-lake",
+      "class": "",
+      "Datasource": {
+        "file": "layers/ontario-lake.geojson"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "ontario-lake"
+    },
+    {
+      "id": "neighbourhoods",
+      "name": "neighbourhoods",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "layers/toronto_neighbourhoods/toronto_neighbourhoods.shp",
+        "type": "shape"
+      },
+      "geometry": "polygon",
+      "extent": [
+        -79.639220428303,
+        43.58098801935913,
+        -79.1152320352966,
+        43.855447864600805
+      ],
+      "srs-name": "custom",
+      "advanced": {}
+    },
+    {
+      "Datasource": {
+        "file": "layers/toronto-lines/toronto-lines.shp",
+        "type": "shape"
+      },
+      "srs": "",
+      "id": "underlay-lines",
+      "name": "underlay-lines",
+      "class": "",
+      "geometry": "linestring",
+      "extent": [
+        -79.63926825157114,
+        43.581006413660994,
+        -79.11524635059097,
+        43.85546811779826
+      ],
+      "srs-name": "autodetect",
+      "advanced": {}
+    },
+    {
+      "Datasource": {
+        "file": "layers/toronto-lines/toronto-lines.shp",
+        "type": "shape"
+      },
+      "srs": "",
+      "id": "lines",
+      "name": "lines",
+      "class": "",
+      "geometry": "linestring",
+      "extent": [
+        -79.63926825157114,
+        43.581006413660994,
+        -79.11524635059097,
+        43.85546811779826
+      ],
+      "srs-name": "autodetect",
+      "advanced": {}
+    },
+    {
+      "Datasource": {
+        "file": "layers/toronto-lines/toronto-lines.shp",
+        "type": "shape",
+        "id": "line-labels",
+        "project": "city_of_toronto",
+        "srs": ""
+      },
+      "srs": "",
+      "id": "line-labels",
+      "name": "line-labels",
+      "class": "",
+      "geometry": "linestring",
+      "extent": [
+        -79.63926825157114,
+        43.581006413660994,
+        -79.11524635059097,
+        43.85546811779826
+      ],
+      "srs-name": "autodetect",
+      "advanced": {}
+    },
+    {
+      "Datasource": {
+        "file": "layers/toronto_surrounding/toronto_surrounding.shp",
+        "type": "shape",
+        "id": "surrounding",
+        "project": "city_of_toronto",
+        "srs": ""
+      },
+      "srs": "",
+      "id": "surrounding",
+      "name": "surrounding",
+      "class": "",
+      "geometry": "linestring",
+      "extent": [
+        -81.7729568,
+        42.6193191,
+        -78.4367527,
+        44.77189549999995
+      ],
+      "srs-name": "autodetect",
+      "advanced": {}
+    },
+    {
+      "id": "parks-underlay",
+      "name": "parks-underlay",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "layers/toronto_parks/toronto_parks.shp",
+        "type": "shape"
+      },
+      "geometry": "polygon",
+      "extent": [
+        -79.63670236915836,
+        43.58054908851505,
+        -79.11570981988575,
+        43.85533990466606
+      ],
+      "srs-name": "custom",
+      "advanced": {}
+    },
+    {
+      "id": "parks",
+      "name": "parks",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "layers/toronto_parks/toronto_parks.shp",
+        "type": "shape"
+      },
+      "geometry": "polygon",
+      "extent": [
+        -79.63670236915836,
+        43.58054908851505,
+        -79.11570981988575,
+        43.85533990466606
+      ],
+      "srs-name": "custom",
+      "advanced": {}
+    }
+  ],
+  "scale": 1,
+  "metatile": 2
+}
