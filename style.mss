@@ -21,7 +21,7 @@ Map {
 #ontario-lake {
   polygon-fill: darken(@water, 25);
   ::texture {
-    polygon-pattern-file:url(./textures/lake-pattern.png);
+    polygon-pattern-file:url(./images/lake-pattern.png);
     }
   }
 
@@ -51,7 +51,7 @@ Map {
   line-color: darken(@grass, 20);
   [zoom>13] { line-width: 1.5; }
   ::pattern[zoom>13]{
-    polygon-pattern-file:url(./textures/trees.png);
+    polygon-pattern-file:url(./images/trees.png);
     }
   }
 

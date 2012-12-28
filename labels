@@ -53,7 +53,7 @@
   }
 
 #line-labels[FCODE_DESC='Expressway'][zoom > 11] {
-  shield-file: url(./textures/shield-small.png);
+  shield-file: url(./images/shield-small.png);
   shield-name: "[LF_NAME]";
   shield-face-name: @sign;
   shield-fill: #fff;
@@ -61,7 +61,7 @@
   shield-size: 10;
   [zoom > 13] {
     shield-size: 16;
-    shield-file: url(./textures/shield.png);
+    shield-file: url(./images/shield.png);
     }
   }
 
