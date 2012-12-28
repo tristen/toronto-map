@@ -1,4 +1,4 @@
-A simple map of Toronto using data provided by [toronto.ca/open](http://toronto.ca/open).
+A map of Toronto using data provided by [toronto.ca/open](http://toronto.ca/open).
 
 ### Installation
 
