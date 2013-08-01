@@ -1,9 +1,9 @@
 /*-----------------------------------
   Font Vars
 ------------------------------------- */
-@sans: "Museo Sans 500", Helvetica, Arial, sans-serif;
-@sans_bold: "Museo Sans 900", Helvetica, Arial, sans-serif;
-@sign: "BigNoodleTitling Regular", "Arial Narrow";
+@sans: "Museo Sans 500", "DejaVu Sans Book";
+@sans_bold: "Museo Sans 900", "DejaVu Sans Book";
+@sign: "BigNoodleTitling Regular", "DejaVu Sans Book";
 
 /*-----------------------------------
   Labels
@@ -65,7 +65,7 @@
     }
   }
 
-#underlay-lines[FCODE_DESC='Major Arterial'][zoom >= 11]
+#underlay-lines[FCODE_DESC='Major Arterial'][zoom >= 11],
 #line-labels[FCODE_DESC='Minor Arterial'],
 #line-labels[FCODE_DESC='Laneway'],
 #line-labels[FCODE_DESC='Local'] {
